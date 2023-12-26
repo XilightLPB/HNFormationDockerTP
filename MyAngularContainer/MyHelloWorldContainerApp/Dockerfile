@@ -7,5 +7,6 @@ RUN npm run build
 
 ### STAGE 2: ###
 FROM nginx:1.17.1-alpine
-COPY --from=build /usr/src/app/dist/MyHelloWorldContainerApp /usr/share/nginx/html
+RUN ls
+COPY --from=build /usr/src/app/dist/my-hello-world-container-app /usr/share/nginx/html
 EXPOSE 80

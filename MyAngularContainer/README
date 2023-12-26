@@ -1,0 +1,10 @@
+To build and run the angular app:
+
+Build:
+$ docker build -t <NameOfTheImage> .
+
+Run:
+$ docker run --name <NameOfTheContainer> -d -p 8888:80 <NameOfTheImage>
+
+Checking the result:
+http://localhost:8888/
